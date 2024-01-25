@@ -26,8 +26,4 @@ jobs:
       Write-Host "Test cases ran successfully!"
     displayName: 'Display Success Message' 
 
-  - task: Email@2
-    inputs:
-      to: 'karanaghav@gmail.com'
-      subject: 'Test Cases Ran Successfully'
-      body: 'Congratulations! Your test cases ran successfully.'
+  
