@@ -12,7 +12,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: CmdLine@2
+  inputs:
+    script: 'echo node index.js'
+    workingDirectory: 'C:\Users\12784\Documents\pupeter'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
