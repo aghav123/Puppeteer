@@ -20,3 +20,8 @@ jobs:
       # Run the node.js script
       node index.js
     displayName: 'Run Node.js Script'
+
+  - powershell: |
+      # Display success message
+      Write-Host "Test cases ran successfully!"
+    displayName: 'Display Success Message' 
