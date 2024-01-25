@@ -15,7 +15,7 @@ jobs:
   steps:
   - powershell: |
       # Navigate to the specified folder
-      cd C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      cd cd .\Documents\pupeter\
       
       # Run the node.js script
       node index.js
