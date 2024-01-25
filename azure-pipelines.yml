@@ -9,7 +9,14 @@ trigger:
 pool:
   karan
 
-- task: CmdLine@2
-  inputs:
-    script: 'node index.js'
-    workingDirectory: 'C:\Users\12784\Documents\pupeter'
+jobs:
+- job: RunNodeJS
+  displayName: 'Run Node.js'
+  steps:
+  - powershell: |
+      # Navigate to the specified folder
+      cd C:\Windows\System32\WindowsPowerShell\
+      
+      # Run the node.js script
+      node index.js
+    displayName: 'Run Node.js Script'
